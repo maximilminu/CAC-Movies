@@ -1,0 +1,57 @@
+/*reseteo de valores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+/*configuracion de variables*/
+:root{
+    --main-color: #f3f3f3;
+    --secondary-color: #161516;
+    --third-color: #850f0f;
+    --third-color-t: #840404bc;
+}
+/*estilos del body*/
+body{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+/*generalidades*/
+h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+   
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/*media querys para dispositivos mas grandes que celular*/
+@media screen and (min-width:768px){
+    h1{
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
+
+/*media querys para dispositivos mas grandes que celular*/
+@media screen and (min-width:992px){
+    h1{
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
