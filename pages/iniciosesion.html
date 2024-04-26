@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión | CAC-MOVIES</title>
+    <title>Iniciar Sesión | Movies</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
@@ -14,31 +15,31 @@
     <header class="headerRegistrarse">
         <a class="anclaLogo" href="../index.html">
             <i class="fas fa-film" aria-hidden="true"></i>
-            <span>CAC-Movies</span>
+            <span>Movies</span>
         </a>
     </header>
     <main id="main" class="main">
-        <section >
-            <!--pongo get ya que en github pages da error el method post-->
+        <section class="container">        
             <form action="" method="get">
                 <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
-                <div>
-                    <input type="email" placeholder="Email" id="email" name="email">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="email">
                     <div class="error-text"></div>
                 </div>
-                <div>
-                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Contraseña" id="password" name="password">
                     <div class="error-text"></div>
                 </div>
-                <div>
-                    <input class="boton" type="submit" value="Iniciar Sesión">
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Iniciar Sesión">
                 </div>
-                <div>
+                <div class="form-group">
                     <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
                 </div>
             </form>
         </section>
     </main>
    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,137 +1,276 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAC-MOVIES</title>
-   
-    <link rel="stylesheet" href="./css/estilos.css">
-    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <header class="header" >
-        <nav >
-            <a href="#">
-                <i class="fas fa-film" aria-hidden="true"></i>
-                <span>CAC-Movies</span>
-            </a>
-            <ul >
-                <li ><a  href="#tendencias">Tendencias</a></li>
-                <li ><a  href="./pages/registrarse.html">Registrarse</a></li>
-                <li ><a  href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="main" >
-        <section class="sectionTitulos">
-            <div class="contenedorTitulos">
-                <h1 >Películas y series ilimitadas <br> en un solo lugar</h1>
-                <h2 >Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
-                <a  href="./pages/registrarse.html">Registrate</a>
-            </div>
-           
-        </section>
-        <section >
-            <h2 >¿Qué estas buscando para ver?</h2>
-            <form >
-                <input type="text" placeholder="Buscar..." id="buscar" name="buscar">
-                <input type="submit" value="Buscar">
-            </form>
-           
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
 
-        </section>
-        <hr>
-        <section id="tendencias" class="peliculasTendencias">
-            <h2>Las tendencias de hoy</h2>
-            <div class="galeriaTendencias">
-                <div> 
-                    <a href="./pages/detalle.html"><img  src="./assets/img/peli_1.jpg" alt="The Beekeeper" loading="lazy"></a>
-                </div>
-                <div>
-                    <a href="./pages/detalle.html"><img  src="./assets/img/peli_2.jpg" alt="Badland Hunters" loading="lazy"></a>
-                </div>
-                <div>
-                    <a href="./pages/detalle.html"><img  src="./assets/img/peli_3.jpg" alt="The Marvels" loading="lazy"></a>
-                </div>
-                <div>
-                    <a href="./pages/detalle.html"><img  src="./assets/img/peli_4.jpg" alt="Wonka" loading="lazy"></a>
-                </div>
-                <div>
-                    <a href="./pages/detalle.html"><img  src="./assets/img/peli_5.jpg" alt="Aquaman and the Lost Kingdom" loading="lazy"></a>
-                </div>
-                <div>
-                    <a href="./pages/detalle.html"><img  src="./assets/img/peli_6.jpg" alt="Migration" loading="lazy"></a>
-                </div>
-                <div>
-                    <a href="./pages/detalle.html"><img  src="./assets/img/peli_7.jpg" alt="Sixty Minutes" loading="lazy"></a>
-                </div>
-                <div>
-                    <a href="./pages/detalle.html"><img  src="./assets/img/peli_8.jpg" alt="Wish" loading="lazy"></a>
-                </div>
-             
-            </div>
-            <button >Anterior</button>  
-            <button >Siguiente</button>
-        </section>
-        <hr>
-        <section class="peliculasAclamadas" >
-            <h2>Las más aclamadas</h2>
-             <div class="galeriaAclamadas">
-                <div >
-                    <img  src="./assets/img/aclamada_1.jpg" alt="aclamada_1" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_2.jpg" alt="aclamada_2" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_3.jpg" alt="aclamada_3" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_4.jpg" alt="aclamada_4" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_5.jpg" alt="aclamada_5" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_6.jpg" alt="aclamada_6" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_7.jpg" alt="aclamada_7" loading="lazy">
-                </div>
-                <div >
-                    <img src="./assets/img/aclamada_8.jpg" alt="aclamada_8" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_9.jpg" alt="aclamada_9" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_10.jpg" alt="aclamada_10" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_11.jpg" alt="aclamada_11" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamada_12.jpg" alt="aclamada_12" loading="lazy">
-                </div>               
-            </div>
-        </section>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/f7fb471b65.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    </main>
-    <footer class="footer">
-        <nav>
-            <ul >
-                <li ><a  href="">Términos y condiciones</a></li>
-                <li ><a  href="">Preguntas frecuentes</a></li>
-                <li ><a  href="">Ayuda</a></li>
-                <li ><a  href="">Administrador Peliculas</a></li>
-            </ul>
-        </nav>
-        <a href="#main" class="flechaArriba">
-            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-film" aria-hidden="true"></i>
+          <span>Movies</span>
         </a>
-    </footer>
-   
-</body>
+        <!-- Burger Menu Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#tendencias">Tendencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/registrarse.html"
+                >Registrarse</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/iniciosesion.html"
+                >Iniciar Sesión</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <main id="main">
+      <section class="sectionTitulos">
+        <div class="contenedorTitulos">
+          <h1 id="callToAction">
+            Todas las peliculas preferidas en un solo lugar
+          </h1>
+          <a href="./pages/registrarse.html">Registrate</a>
+        </div>
+      </section>
+      <section>
+        <h2>¿Qué estás buscando para ver?</h2>
+        <form class="row g-3">
+            <div class="col-auto">
+                <input type="text" class="form-control" id="buscar" placeholder="Buscar..." name="buscar">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+            </div>
+        </form>
+    </section>
+      <hr />
+      <section id="tendencias" class="peliculasTendencias">
+        <h2>Las tendencias de hoy</h2>
+        <div class="galeriaTendencias">
+          <div>
+            <a href="./pages/detalle.html"
+              ><img
+                src="./assets/img/peli_1.jpg"
+                alt="The Beekeeper"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <a href="./pages/detalle.html"
+              ><img
+                src="./assets/img/peli_2.jpg"
+                alt="Badland Hunters"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <a href="./pages/detalle.html"
+              ><img
+                src="./assets/img/peli_3.jpg"
+                alt="The Marvels"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <a href="./pages/detalle.html"
+              ><img src="./assets/img/peli_4.jpg" alt="Wonka" loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <a href="./pages/detalle.html"
+              ><img
+                src="./assets/img/peli_5.jpg"
+                alt="Aquaman and the Lost Kingdom"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <a href="./pages/detalle.html"
+              ><img
+                src="./assets/img/peli_6.jpg"
+                alt="Migration"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <a href="./pages/detalle.html"
+              ><img
+                src="./assets/img/peli_7.jpg"
+                alt="Sixty Minutes"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <a href="./pages/detalle.html"
+              ><img src="./assets/img/peli_8.jpg" alt="Wish" loading="lazy"
+            /></a>
+          </div>
+        </div>
+        <button>Anterior</button>
+        <button>Siguiente</button>
+      </section>
+      <hr />
+      <section class="peliculasAclamadas">
+        <h2>Las más aclamadas</h2>
+        <div class="galeriaAclamadas">
+          <div>
+            <img
+              src="./assets/img/aclamada_1.jpg"
+              alt="aclamada_1"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_2.jpg"
+              alt="aclamada_2"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_3.jpg"
+              alt="aclamada_3"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_4.jpg"
+              alt="aclamada_4"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_5.jpg"
+              alt="aclamada_5"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_6.jpg"
+              alt="aclamada_6"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_7.jpg"
+              alt="aclamada_7"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_8.jpg"
+              alt="aclamada_8"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_9.jpg"
+              alt="aclamada_9"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_10.jpg"
+              alt="aclamada_10"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_11.jpg"
+              alt="aclamada_11"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/aclamada_12.jpg"
+              alt="aclamada_12"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-black">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-between py-3">
+            <div class="col-lg-8">
+              <nav>
+                <ul class="navbar-nav d-flex flex-row justify-content-between flex-wrap">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Términos y condiciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ayuda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Administrador Peliculas</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#main" class="flechaArriba">
+                <i class="fas fa-arrow-up" style="color: white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

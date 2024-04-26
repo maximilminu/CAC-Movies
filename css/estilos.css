@@ -88,6 +88,21 @@ header,footer{
         }
     }
 }
+
+#callToAction {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f2eeee; /* Change color as needed */
+    text-align: center;
+    margin-top: 50px; /* Adjust margin top as needed */
+    text-shadow: 
+    0 0 5px #52bfff, /* Red shadow */
+    0 0 10px #ff7700, /* Orange shadow */
+    0 0 15px #ffaa00, /* Yellow shadow */
+    0 0 20px #00ff00, /* Green shadow */
+    0 0 25px #0000ff, /* Blue shadow */
+    0 0 30px #8a2be2; /* Indigo shadow */
+}
 /*main
 estilos seccion principal
 */
@@ -211,6 +226,8 @@ estilos seccion principal
     }
 }
 
+
+
 .footer{
     nav{
         ul{
@@ -230,7 +247,8 @@ estilos seccion principal
         }
     }
     .flechaArriba{
-        position:fixed;
+        /* position:fixed; */
+        align-items: center;
         bottom: 20px;
         right: 20px;
     }
