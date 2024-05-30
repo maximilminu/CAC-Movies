@@ -155,6 +155,7 @@ estilos seccion principal
     width: 80%;
     margin:0 auto;
     text-align: center;
+    position: relative;
     h2{
         margin-top:50px;
         margin-bottom:20px;
