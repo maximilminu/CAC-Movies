@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const API_SERVER = 'https://api.themoviedb.org/3';
+    
     const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM2I3YTM1NDAzNGIxN2E1ZDEwZDU3YjI5NjlkZDI3MSIsInN1YiI6IjYyOTExM2QwMDllZDhmMDA1MGZkMDA1YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.uXj5QSis1CVJvEsiy8XiUZM3BGavMhzG8puSbwpihNA'; 
 
     const movieId = getUrlParameter('id');
